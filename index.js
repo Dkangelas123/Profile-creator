@@ -152,7 +152,7 @@ const addEmployee = () => {
         },
         {
             type: 'confirm',
-            name: 'confirmAddEmployee',
+            name: 'AddEmployee',
             message: 'Would you like to add more members?',
             default: false
         }
@@ -202,8 +202,8 @@ addManager()
   .then(profilecards => {
     return cardHtml(profilecards);
   })
-  .then(pageHTML => {
-    return createFile(pageHTML);
+  .then(HTMLpage => {
+    return createFile(HTMLpage);
   })
   .catch(err => {
  console.log(err);
