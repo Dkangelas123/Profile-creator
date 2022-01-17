@@ -32,7 +32,7 @@ describe("Employee", () => {
 
     describe("getName", () => {
         it("get name from getName()", () => {
-            const testValue = "Alice";
+            const testValue = "Angel";
             const El = new Employee(testValue);
             expect(El.getName()).toBe(testValue);
         });
